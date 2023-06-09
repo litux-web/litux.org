@@ -1,0 +1,1 @@
+redirect: /mobile/svg-vs-macromedia
