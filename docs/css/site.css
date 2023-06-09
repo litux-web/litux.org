@@ -1,0 +1,337 @@
+body {
+  font-family: Lucida Sans, Verdana, Geneva, Tahoma, sans-serif;
+  background: #FBFBFD;
+  color: #1d1d1f;
+  margin: 0 2em;
+  font-size: 10px;
+  padding-bottom: 42px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  width: fit-content;
+  border-bottom: #aaa solid 1px;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.7em;
+}
+
+h6 {
+  font-size: 1.6em;
+}
+
+p {
+  margin-bottom: 1.1em;
+}
+
+blockquote {
+  margin: 0 2em 1.1em 2em;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+
+p {
+  font-size: 1.5em;
+}
+
+
+p,
+hr {
+  clear: both;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 20px;
+  margin-bottom: 0.5em;
+}
+
+li>p {
+  margin-bottom: 0;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+small {
+  font-size: 1.3em;
+}
+
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p>code {
+  word-break: break-all;
+}
+
+pre>code {
+  font-size: 1.4em;
+  line-height: 1.6em;
+
+}
+
+pre {
+  outline: 1px solid #ddd;
+  border-left: 3px double #aaa;
+  padding: 0.4em 0.8em;
+  margin: 0 2em 1.1em 2em;
+  white-space: pre-wrap;
+}
+
+blockquote {
+  font-style: italic;
+  outline: 1px solid #ddd;
+  border-left: 3px double #aaa;
+  padding: 0.5em 1em;
+  color: #66666f;
+}
+
+
+a {
+  color: #06C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  pointer-events: all;
+}
+
+a:any-link {
+  cursor: auto;
+}
+
+#home img {
+  width: 42%;
+}
+
+.index h4 {
+  border-bottom: #aaa solid 1px;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.article h2 {
+  width: fit-content;
+  border-bottom: #aaa solid 1px;
+  margin-top: 30px;
+}
+
+.index li {
+  margin-bottom: 0.8em;
+  line-height: 1.2em;
+}
+
+.index ul {
+  margin-bottom: 1.5em;
+}
+
+.index li .last-updated {
+  font-style: italic;
+}
+
+
+.footer {
+  margin: 4em 2em 0 2em;
+  padding: 0.5em 0 2em 0;
+  font-size: 1.2em;
+  font-style: italic;
+  border-top: #aaa solid 1px;
+  display: flex;
+  flex-direction: row;
+  color: #69696f;
+}
+
+.footer div {
+  white-space: pre-wrap;
+}
+
+.footer div:not(:last-child) {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.footer div:first-child {
+  white-space: pre-wrap;
+  padding-left: 0px;
+}
+
+.footer div:last-child {
+  margin-left: auto;
+  word-break: keep-all;
+}
+
+#footer-last-updated {
+  color: #aaa;
+}
+
+.body {
+  background: white;
+  padding: 0 2em;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.article {
+  max-width: 1024px;
+  padding: 4em 2em;
+}
+
+.article .article-header {
+  border-bottom: #aaa solid 1px;
+  margin-bottom: 1.8em;
+}
+
+.article .article-header img {
+  width: 25%;
+}
+
+.article .article-last-updated {
+  color: #aaa;
+}
+
+.article .article-body {
+  margin-top: 2em;
+}
+
+.article .article-body p {
+  line-height: 160%;
+}
+
+.article .nav {
+  border-top: #aaa solid 1px;
+  margin-top: 2em;
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  color: #aaaaaf;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.article .article-body img {
+  width: 24%;
+  float: left;
+  padding: 0 2em 2em 0;
+}
+
+.article .article-body strike {
+  font-size: 90%;
+}
+
+.article .article-body strike a {
+  color: #aaaaff;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 11px;
+  }
+
+  .article .nav {
+    display: block;
+  }
+
+  .article .nav span {
+    display: block;
+    padding-bottom: 1em;
+  }
+}
+
+hr {
+  margin: 3em 1em 2em 2em;
+  border-top: 1px solid #cccccf;
+}
+
+#footer-comments-separator,
+#footer-comments {
+  visibility: hidden;
+}
+
+#disqus-comment-count,
+#disqus_thread {
+  display: none;
+}
+
+a[href^="http://"]:not([href*="www.litux.org"]):not([href*="web.archive.org"]):after,
+a[href^="https://"]:not([href*="www.litux.org"]):not([href*="web.archive.org"]):after {
+  content: '↗️';
+  vertical-align: super;
+  font-size: 0.6em;
+  padding: 0 2px;
+}
+
+a[href^="https://web.archive.org"]:after {
+  content: '🗃';
+  vertical-align: super;
+  font-size: 0.6em;
+  padding: 0 2px;
+}
+
+strike a[href^="http://"]:not([href*="www.litux.org"]):not([href*="web.archive.org"]):after,
+strike a[href^="https://"]:not([href*="www.litux.org"]):not([href*="web.archive.org"]):after {
+  content: '❌' !important;
+}

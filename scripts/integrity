@@ -1,0 +1,11 @@
+#!/bin/bash
+
+S=$1
+
+if [ "x${S:0:4}" = "xhttp" ] ; then
+  curl -gsN "$S"
+else
+  cat "$S"
+fi \
+ | openssl dgst -sha384 -binary -| openssl base64 -A
+

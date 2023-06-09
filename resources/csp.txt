@@ -1,0 +1,46 @@
+frame-ancestors 'none';
+base-uri 'self'; default-src 'self';
+font-src 'self'; media-src 'self'; object-src 'self';
+form-action 'self'; worker-src 'self';
+
+style-src 'self'
+  'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='
+  'sha256-S7JeKectYc6cbuYmMu0sGEb2ApwTg7MEiY1vjaaiCyQ='
+  'sha256-MpoKUwOK6CzOmKMt8YdxFGobEFY32yQh8qiDEPgaz2w='
+  'sha256-MiFtFjQ2fIMLg4oJ4xqXP5BJNMsImIZ/Gd/s9UwISEs='
+  'sha256-fiOwm2C2XBdD65LEz2htmvpmCsnubAoSdDtB43Mkavw='
+  'sha256-+46x8lShh4s8u2L5RA+bTmi0jpo+d+ST4IgK6wLmgAQ='
+  'sha256-OWmlaHRCxu2ZM+W0u5jqZQSTcBEjgGgZRtRunVnMBGs='
+;
+
+script-src 'strict-dynamic'
+  'nonce-FptGUMIiKR2Et2/0SPHhuPz01YpmDGKhV4IjBl8B0OAHqwoPWtqbSqtMSDgfMQPJ'
+  'sha384-FptGUMIiKR2Et2/0SPHhuPz01YpmDGKhV4IjBl8B0OAHqwoPWtqbSqtMSDgfMQPJ'
+  'sha384-gpwPFWD25RN3A0HMcCB0WLbHjcRmMRVbQqO0efU8rPleXBPL5EgUqmzNyWRmpBgL'
+;
+
+img-src 'self'
+  https://www.googletagmanager.com
+  https://www.google.com/ads/ga-audiences
+  https://www.google.pt/ads/ga-audiences
+  https://*.analytics.google.com/g/collect
+  https://*.analytics.google.pt/g/collect
+  https://*.disqus.com/juggler/
+  https://*.disquscdn.com/next/embed/assets/img/
+;
+
+connect-src 'self'
+  https://*.analytics.google.com/g/collect
+  https://*.analytics.google.pt/g/collect
+  https://*.google-analytics.com/g/collect
+  https://stats.g.doubleclick.net/g/collect
+  https://www.google.com/ads/ga-audiences
+  https://www.google.pt/ads/ga-audiences
+  https://geo.privacymanager.io/
+;
+
+frame-src 'self'
+  https://disqus.com/embed/comments/
+;
+
+report-uri https://bc76d7cb63dee2c2f498530cd75840de.report-uri.com/r/d/csp/enforce;

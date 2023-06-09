@@ -1,0 +1,51 @@
+
+on:
+  push:
+    branches: [ "docs" ]
+
+  workflow_dispatch:
+    # none
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: python version
+        run: python --version
+      - name: dependencies
+        run: pip install -r requirements.txt
+      - name: build
+        run: python src/generate.py
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.8
+        with:
+          path: "docs"
+
+  deploy:
+    needs: build
+    name: deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+      - name: IFTTT Webhook
+        uses: alfredosalzillo/ifttt-webhook-action@v1
+        with:
+          event: ${{ secrets.IFTTT_EVENT }}
+          key: ${{ secrets.IFTTT_KEY }}
+          value1: "Deploy complete"
+          value2: ${{ steps.deployment.outputs.page_url }}
+          value3: ""

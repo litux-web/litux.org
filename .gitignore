@@ -1,0 +1,7 @@
+.touch*
+
+.vscode/*
+
+docs/sitemap.xml
+docs/**/*.html
+

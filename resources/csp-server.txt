@@ -1,0 +1,22 @@
+frame-ancestors 'none';
+base-uri 'self'; default-src 'self';
+font-src 'self'; media-src 'self'; object-src 'self';
+form-action 'self'; worker-src 'self';
+style-src 'self'
+  'sha256-/DXjfYUUJWnYrCRgtOE0sbgYb+loFr5i0G0HlISdPrU='
+;
+script-src 'strict-dynamic'
+;
+img-src 'self'
+;
+connect-src 'self'
+;
+frame-src 'self'
+;
+report-uri https://bc76d7cb63dee2c2f498530cd75840de.report-uri.com/r/d/csp/enforce;
+
+frame-ancestors 'none'; base-uri 'self'; default-src 'self'; font-src 'self'; media-src 'self'; object-src 'self'; form-action 'self'; worker-src 'self'; style-src 'self' 'sha256-/DXjfYUUJWnYrCRgtOE0sbgYb+loFr5i0G0HlISdPrU=' ; script-src 'strict-dynamic' 'self' ; img-src 'self' ; connect-src 'self' ; frame-src 'self' ; report-uri https://bc76d7cb63dee2c2f498530cd75840de.report-uri.com/r/d/csp/enforce;
+
+Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://bc76d7cb63dee2c2f498530cd75840de.report-uri.com/a/d/g"}],"include_subdomains":true}
+
+NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}

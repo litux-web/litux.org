@@ -1,0 +1,1 @@
+redirect: /vodafone/vodafone-live-cast
