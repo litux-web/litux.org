@@ -1,0 +1,41 @@
+<div class="comments">
+  <div id="disqus-comment-count" class="disqus-comment-count" data-disqus-url="{{{canonical-link}}}"></div>
+  <a name="comments"></a>
+  <div id="disqus_thread"></div>
+  <script data-cookie-consent="functionality" type="text/plain" id="dsq-count-scr"
+          src="/js/disqus-count.js" orig="https://litux.disqus.com/count.js" crossorigin="anonymous"
+          integrity="{{{integrity-/js/disqus-count.js}}}"></script>
+  <script data-cookie-consent="functionality" type="text/plain" crossorigin="anonymous"
+          integrity="{{{integrity-text-local-disqus-js}}}">
+    var disqus_config = function () { this.page.url = "{{{canonical-link}}}"; this.page.identifier = this.page.url; };
+    (function() {
+      var d = document;
+      var s = d.createElement('script');
+      s.src = 'https://litux.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      console.log("disqus-comments", "start");
+      d.getElementById("open_comments").addEventListener('click', function() {
+        d.getElementById("disqus_thread").style.display = "block";
+      });
+      d.getElementById("footer-comments-separator").style.visibility = "visible";
+      d.getElementById("footer-comments").style.visibility = "visible";
+
+      function update_comments() {
+        var commentText = d.getElementById("disqus-comment-count").innerText;
+        //console.log("disqus-comments", "commentText", commentText);
+        if (commentText === "") { setTimeout(update_comments, 1000); return; }
+        var comments = commentText.split(" ")[0];
+        //console.log("disqus-comments", "commentText", commentText, "comments", comments);
+        if (comments > 0) {
+          d.getElementById("open_comments").textContent = commentText;
+          d.getElementById("disqus_thread").style.display = "block";
+        }
+      }
+      setTimeout(update_comments, 1000);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>

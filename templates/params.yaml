@@ -1,0 +1,21 @@
+site-link: https://www.litux.org
+site-name: Litux
+site-title: <a href="/"><img width="256px" height="118px" src="/images/litux.png" alt="Litux - Technology, Simplified" /></a>
+site-about: | <div id="footer-about"><a href="/about">About Litux</a></div>
+copyright-line: © 1999-{{{current-year}}} Bruno D. Rodrigues – All Rights Reserved
+google-analytics: G-C7YL9DKW6N
+meta-description: Litux
+meta-keywords: Litux, Bruno Rodrigues
+alias-java: Java
+alias-apple: Apple
+alias-mobile: Mobile
+alias-vodafone: Vodafone
+alias-debian: Debian
+alias-voidasterisk: VoidAsterisk
+alias-aws: AWS
+alias-ux: UX
+alias-web: Web
+alias-data: Data
+alias-security: Internet Security
+alias-software-development: Software Development
+alias-home: Home
