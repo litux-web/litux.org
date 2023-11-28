@@ -1,0 +1,1 @@
+redirect: /temp/endpoint
